@@ -220,12 +220,10 @@ h1 {
   display: block;
 }
 
-/* Platform logos */
-.platform-logo{
-  height: 28px;
+.platform-logo {
+  height: 56px;
   width: auto;
   display: block;
-  margin: 8px 0 14px;
+  margin: 12px 0 18px;
   object-fit: contain;
-}
 
