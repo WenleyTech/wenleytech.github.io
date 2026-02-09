@@ -215,19 +215,23 @@ h1 {
 
 /* Header logo */
 .logo-img {
-  height: 64px;
+  height: 88px;      /* Increased for stronger brand presence */
   width: auto;
   display: block;
 }
 
+/* Platform logos (default) */
 .platform-logo {
   height: 56px;
   width: auto;
   display: block;
   margin: 12px 0 18px;
   object-fit: contain;
-  /* Wide logos like BeautyJar */
+}
+
+/* Wide logos like BeautyJar */
 .platform-logo-wide {
   height: 70px;
 }
+
 
