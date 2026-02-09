@@ -227,8 +227,6 @@ h1 {
   display: block;
   margin: 12px 0 18px;
   object-fit: contain;
-}
-
 /* Wide logos like BeautyJar */
 .platform-logo-wide {
   height: 70px;
