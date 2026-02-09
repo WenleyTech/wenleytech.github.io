@@ -85,11 +85,12 @@ a:hover{color:var(--magenta)}
   background:linear-gradient(135deg, var(--magenta), var(--magenta2));
   box-shadow: 0 8px 20px rgba(225,29,123,.25);
 }
-h1{
-  margin:14px 0 10px;
-  font-size:46px; line-height:1.05;
-  letter-spacing:-.6px;
-  color:var(--navy);
+h1 {
+  margin: 14px 0 24px;
+  font-size: 46px;
+  line-height: 1.05;
+  letter-spacing: -0.6px;
+  color: var(--navy);
 }
 .subhead{
   max-width:720px;
