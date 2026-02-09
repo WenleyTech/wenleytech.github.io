@@ -217,3 +217,9 @@ h1 {
   width: auto;
   display: block;
 }
+.platform-logo {
+  height: 32px;
+  width: auto;
+  margin-bottom: 12px;
+  display: block;
+}
