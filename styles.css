@@ -212,7 +212,7 @@ h1{
   .nav{gap:10px; flex-wrap:wrap; justify-content:flex-end}
 }
 .logo-img {
-  height: 42px;
+  height: 64px;
   width: auto;
   display: block;
 }
