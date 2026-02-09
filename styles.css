@@ -70,8 +70,8 @@ a:hover{color:var(--magenta)}
 }
 .nav a.cta:hover{filter:brightness(.98); color:white}
 
-.hero{
-  padding:62px 0 28px;
+.hero {
+  padding: 80px 0 40px;
 }
 .kicker{
   display:inline-flex; gap:10px; align-items:center;
