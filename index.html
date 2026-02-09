@@ -1,48 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Wenley Technologies</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta name="description" content="Wenley Technologies supports the operations behind specialized digital platforms." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html" aria-label="Wenley Technologies home">
+        <div class="brand-mark"></div>
+        <div class="brand-title">
+          <span>WENLEY</span>
+          <span>TECHNOLOGIES</span>
+        </div>
+      </a>
 
-<header class="nav">
-  <img src="assets/img/wenley-logo.png" class="logo" alt="Wenley Tech Logo">
-  <nav>
-    <a href="who-we-are.html">Who we are</a>
-    <a href="what-we-do.html">What we do</a>
-    <a href="platforms.html">Platforms</a>
-    <a href="contact.html" class="btn">Contact</a>
-  </nav>
-</header>
+      <nav class="nav" aria-label="Primary">
+        <a class="active" href="who-we-are.html">Who we are</a>
+        <a href="what-we-do.html">What we do</a>
+        <a href="platforms.html">Platforms</a>
+        <a class="cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="hero">
-  <h1>We support the operations behind specialized digital platforms.</h1>
-  <p>Clear structure. Clean systems. Built on trust.</p>
-</section>
+  <main class="container">
+    <section class="hero">
+      <div class="kicker"><span class="kicker-dot"></span> Platform operations • Compliance-aware • Built for scale</div>
+      <h1>We support the operations behind specialized digital platforms.</h1>
+      <p class="subhead">
+        Clear structure. Clean systems. Built on trust. Wenley Technologies builds and manages digital commerce infrastructure—
+        from onboarding and documentation to platform oversight and lifecycle management.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="what-we-do.html">Explore capabilities</a>
+        <a class="btn" href="platforms.html">View platforms</a>
+      </div>
+    </section>
 
-<section class="features">
-  <div>
-    <h3>Operational structure</h3>
-    <p>Defined processes that keep platforms running smoothly.</p>
-  </div>
-  <div>
-    <h3>Documentation & standards</h3>
-    <p>Organized systems that stay clean over time.</p>
-  </div>
-  <div>
-    <h3>Trust & accountability</h3>
-    <p>Practical oversight that supports responsible growth.</p>
-  </div>
-</section>
+    <section class="grid" aria-label="Highlights">
+      <div class="card">
+        <div class="tag">Operational structure</div>
+        <h3>Processes that keep platforms running smoothly</h3>
+        <p>Defined workflows, role clarity, and repeatable systems that reduce chaos and increase execution quality.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Documentation & standards</div>
+        <h3>Organized systems that stay clean over time</h3>
+        <p>Centralized guides, templates, and internal controls that make teams faster and platforms easier to maintain.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Trust & accountability</div>
+        <h3>Practical oversight that supports responsible growth</h3>
+        <p>Structured accountability, vendor governance, and compliance-aware operations to support long-term integrity.</p>
+      </div>
+    </section>
 
-<footer>
-  © Wenley Technologies
-</footer>
+    <section class="section">
+      <h2>What we’re building</h2>
+      <p class="lead">
+        Wenley Technologies is the parent company behind specialized platforms focused on vetted, trustworthy experiences.
+        We operate with a compliance-first mindset—because platforms only scale when trust scales.
+      </p>
 
+      <div class="two-col">
+        <div class="panel">
+          <h2 style="font-size:20px;margin:0 0 8px;">Operating principles</h2>
+          <ul class="list">
+            <li><strong>Verification-first:</strong> prioritize credibility, quality, and safety</li>
+            <li><strong>Process over hustle:</strong> clean execution beats chaos</li>
+            <li><strong>Minimum necessary complexity:</strong> keep systems elegant and sustainable</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h2 style="font-size:20px;margin:0 0 8px;">Quick note</h2>
+          <p class="mini">
+            This is intentionally lean and crisp. Once the parent company site is live and stable,
+            we’ll iterate visuals and add team + governance pages if needed.
+          </p>
+          <div style="height:10px"></div>
+          <a class="btn primary" href="contact.html">Start a conversation</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © <span id="y"></span> Wenley Technologies
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
 
