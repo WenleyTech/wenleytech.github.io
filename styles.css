@@ -212,14 +212,20 @@ h1 {
   .two-col{grid-template-columns:1fr}
   .nav{gap:10px; flex-wrap:wrap; justify-content:flex-end}
 }
+
+/* Header logo */
 .logo-img {
   height: 64px;
   width: auto;
   display: block;
 }
-.platform-logo {
-  height: 32px;
+
+/* Platform logos */
+.platform-logo{
+  height: 28px;
   width: auto;
-  margin-bottom: 12px;
   display: block;
+  margin: 8px 0 14px;
+  object-fit: contain;
 }
+
