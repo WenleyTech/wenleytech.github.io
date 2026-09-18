@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wenley Technologies | Medical Aesthetics &amp; Women's Health Directories</title>
-  <meta name="description" content="Wenley Technologies builds and operates specialized digital directories connecting people with professionals in medical aesthetics and women's health, including BeautyJar and WomensHealthPros.">
+  <title>Wenley Technologies | Medical Aesthetics &amp; Health Directories</title>
+  <meta name="description" content="Wenley Technologies builds and operates specialized digital directories connecting people with professionals in medical aesthetics and health, including BeautyJar, WomensHealthPros, and Backbeam.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Wenley Technologies LLC">
   <meta name="application-name" content="Wenley Technologies">
@@ -15,14 +15,14 @@
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Wenley Technologies">
-  <meta property="og:title" content="Wenley Technologies | Medical Aesthetics &amp; Women's Health Directories">
-  <meta property="og:description" content="Specialized digital directories for medical aesthetics and women's health, including BeautyJar and WomensHealthPros.">
+  <meta property="og:title" content="Wenley Technologies | Medical Aesthetics &amp; Health Directories">
+  <meta property="og:description" content="Specialized digital directories for medical aesthetics and health, including BeautyJar, WomensHealthPros, and Backbeam.">
   <meta property="og:url" content="https://wenleytech.com/">
   <meta property="og:locale" content="en_US">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Wenley Technologies | Medical Aesthetics &amp; Women's Health Directories">
-  <meta name="twitter:description" content="Specialized digital directories for medical aesthetics and women's health, including BeautyJar and WomensHealthPros.">
+  <meta name="twitter:title" content="Wenley Technologies | Medical Aesthetics &amp; Health Directories">
+  <meta name="twitter:description" content="Specialized digital directories for medical aesthetics and health, including BeautyJar, WomensHealthPros, and Backbeam.">
 
   <script type="application/ld+json">
 {
@@ -33,7 +33,7 @@
       "@id": "https://wenleytech.com/#website",
       "url": "https://wenleytech.com/",
       "name": "Wenley Technologies",
-      "description": "Wenley Technologies builds and operates specialized digital directories for medical aesthetics and women's health.",
+      "description": "Wenley Technologies builds and operates specialized digital directories for medical aesthetics and health.",
       "inLanguage": "en-US",
       "publisher": { "@id": "https://wenleytech.com/#organization" }
     },
@@ -42,10 +42,11 @@
       "@id": "https://wenleytech.com/#organization",
       "name": "Wenley Technologies LLC",
       "url": "https://wenleytech.com/",
-      "description": "A digital directory company operating specialized platforms in medical aesthetics and women's health.",
+      "description": "A digital directory company operating specialized platforms in medical aesthetics and health.",
       "brand": [
         { "@type": "Brand", "name": "BeautyJar", "url": "https://beautyjar.com/" },
-        { "@type": "Brand", "name": "WomensHealthPros", "url": "https://womenshealthpros.com/" }
+        { "@type": "Brand", "name": "WomensHealthPros", "url": "https://womenshealthpros.com/" },
+        { "@type": "Brand", "name": "Backbeam", "url": "https://backbeamnetwork.com/" }
       ]
     }
   ]
@@ -98,26 +99,31 @@
 
     .editorial-grid{
       display:grid;
-      grid-template-columns:1fr 1px 1fr;
-      gap:64px;
+      grid-template-columns:repeat(3,1fr);
+      gap:0;
+      border-top:1px solid var(--ink);
+      border-bottom:1px solid var(--ink);
     }
-
-    .editorial-divider{background:var(--ink)}
 
     .platform-panel{
       display:flex;
       flex-direction:column;
+      align-items:flex-start;
+      text-align:left;
       gap:20px;
+      padding:34px 30px 36px;
+      min-height:245px;
+      border-right:1px solid var(--line);
     }
 
-    .platform-panel.left{align-items:flex-end;text-align:right}
-    .platform-panel.right{align-items:flex-start;text-align:left}
+    .platform-panel:last-child{border-right:0}
 
-    .platform-panel h2{font-size:32px;line-height:1;letter-spacing:-.035em}
+    .platform-panel h2{font-size:29px;line-height:1;letter-spacing:-.035em}
     .platform-panel.beauty h2{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;color:var(--beauty)}
     .platform-panel.health h2{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;color:var(--health)}
+    .platform-panel.backbeam h2{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;color:#0f1f2b}
 
-    .platform-panel p{font-size:16px;font-weight:500;line-height:1.6;max-width:330px}
+    .platform-panel p{font-size:15px;font-weight:500;line-height:1.6;max-width:100%}
 
     .visit{
       font-size:13px;
@@ -147,7 +153,7 @@
       letter-spacing:-.025em;font-weight:500
     }
     .leadership-grid{
-      display:grid;grid-template-columns:repeat(3,1fr);
+      display:grid;grid-template-columns:repeat(2,1fr);
       border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)
     }
     .leader{
@@ -220,13 +226,18 @@
     footer{border-top:1px solid var(--ink);padding:28px 0 50px;text-align:center}
     footer p{font-size:12px;font-weight:500;letter-spacing:.02em}
 
-    @media (max-width:760px){
-      .editorial-grid{grid-template-columns:1fr;gap:0}
-      .editorial-divider{display:none}
-      .platform-panel{padding:40px 0;border-bottom:1px solid var(--ink)}
+    @media (max-width:900px){
+      .editorial-grid{grid-template-columns:1fr}
+      .platform-panel{
+        min-height:0;
+        padding:36px 0;
+        border-right:0;
+        border-bottom:1px solid var(--line);
+        align-items:center;
+        text-align:center;
+      }
       .platform-panel:last-child{border-bottom:0}
-      .platform-panel.left,
-      .platform-panel.right{align-items:center;text-align:center}
+      .platform-panel p{max-width:430px}
     }
   </style>
 </head>
@@ -249,18 +260,22 @@
   <section class="shell platforms" id="platforms">
     <div class="editorial-grid">
 
-      <a class="platform-panel beauty left" href="https://beautyjar.com/" target="_blank" rel="noopener">
+      <a class="platform-panel beauty" href="https://beautyjar.com/" target="_blank" rel="noopener">
         <h2>BeautyJar</h2>
         <p>Find providers for injectables, skin and laser treatments, hair restoration, body treatments, and cosmetic procedures.</p>
         <span class="visit">Visit beautyjar.com</span>
       </a>
 
-      <div class="editorial-divider" aria-hidden="true"></div>
-
-      <a class="platform-panel health right" href="https://womenshealthpros.com/" target="_blank" rel="noopener">
+      <a class="platform-panel health" href="https://womenshealthpros.com/" target="_blank" rel="noopener">
         <h2>WomensHealthPros</h2>
         <p>Find women’s health and wellness professionals by concern, treatment, and location.</p>
         <span class="visit">Visit womenshealthpros.com</span>
+      </a>
+
+      <a class="platform-panel backbeam" href="https://backbeamnetwork.com/" target="_blank" rel="noopener">
+        <h2>Backbeam</h2>
+        <p>Find men’s health providers by concern, treatment, and location.</p>
+        <span class="visit">Visit backbeamnetwork.com</span>
       </a>
 
     </div>
@@ -285,12 +300,6 @@
 <div>
         <h3>Kaitlyn Williams</h3>
         <p>Provider Relationship Specialist</p>
-      </div>
-    </div>
-    <div class="leader">
-<div>
-        <h3>John Lawson</h3>
-        <p>CEO</p>
       </div>
     </div>
   </div>
