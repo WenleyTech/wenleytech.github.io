@@ -242,7 +242,7 @@
         <div class="people">
           <div class="person">
             <div class="person-head"><div class="mono" aria-hidden="true">NAO</div><div><h3>Nana A. Osei</h3><div class="title">Head of Privacy and Compliance</div></div></div>
-            <p>Nana leads privacy and compliance for Wenley Health and its three brands, from how patient and provider data is handled to vendor risk, responsible AI and the policies behind each platform. She also helps shape company strategy.</p>
+            <p>Nana leads privacy and compliance for Wenley Health and its three brands, from provider verification and user data to vendor risk, responsible AI and the policies behind each platform.</p>
           </div>
           <div class="person">
             <div class="person-head"><div class="mono" aria-hidden="true">KW</div><div><h3>Kaitlyn Williams</h3><div class="title">Provider Relationship Specialist</div></div></div>
@@ -256,8 +256,10 @@
       </div>
       <footer>
         <div class="shell foot">
-          <div>Wenley Health · Silver Spring, Maryland · A trade name of Wenley Technologies LLC · © Wenley Technologies LLC</div>
+          <div>Wenley Health · Silver Spring, Maryland · A trade name of Wenley Technologies LLC · © <span class="yr">2026</span> Wenley Technologies LLC</div>
           <div class="links">
+            <a href="/privacy.html">Privacy</a>
+            <a href="/terms.html">Terms</a>
             <a href="https://www.linkedin.com/company/wenley-technologies/" target="_blank" rel="noopener">LinkedIn</a>
             <a href="https://medium.com/@WenleyTechnologies" target="_blank" rel="noopener">Medium</a>
           </div>
@@ -265,5 +267,6 @@
       </footer>
     </section>
   </main>
+  <script>document.querySelectorAll(".yr").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
 </body>
 </html>
