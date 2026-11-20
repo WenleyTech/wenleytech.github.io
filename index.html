@@ -79,6 +79,10 @@
         { "@id": "https://wenleytech.com/#nana-osei" },
         { "@id": "https://wenleytech.com/#kaitlyn-williams" }
       ],
+      "member": [
+        { "@id": "https://wenleytech.com/#mambo-awasum-henry" },
+        { "@id": "https://wenleytech.com/#nelly-lubin" }
+      ],
       "knowsAbout": [
         "Digital health",
         "Healthcare provider discovery",
@@ -95,9 +99,10 @@
       "@type": "Person",
       "@id": "https://wenleytech.com/#nana-osei",
       "name": "Nana A. Osei",
+      "honorificSuffix": "CSPO",
       "jobTitle": "Head of Privacy and Compliance",
       "worksFor": { "@id": "https://wenleytech.com/#organization" },
-      "knowsAbout": ["Health data privacy", "Governance, risk and compliance", "AI governance", "Digital health strategy"]
+      "knowsAbout": ["Governance, risk and compliance", "Health data privacy", "AI governance", "Healthcare technology", "Agile product ownership"]
     },
     {
       "@type": "Person",
@@ -105,6 +110,25 @@
       "name": "Kaitlyn Williams",
       "jobTitle": "Provider Relationship Specialist",
       "worksFor": { "@id": "https://wenleytech.com/#organization" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://wenleytech.com/#mambo-awasum-henry",
+      "name": "Mambo Awasum-Henry",
+      "honorificSuffix": "LMSW, LGSW, CSM",
+      "jobTitle": "Brand Consultant",
+      "affiliation": { "@id": "https://wenleytech.com/#organization" },
+      "knowsAbout": ["Brand strategy", "Mental health", "Patient and provider communication"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://wenleytech.com/#nelly-lubin",
+      "name": "Yathniella Lubin",
+      "alternateName": "Nelly Lubin",
+      "honorificSuffix": "MBA, MS",
+      "jobTitle": "Operations and Learning Advisor",
+      "affiliation": { "@id": "https://wenleytech.com/#organization" },
+      "knowsAbout": ["Operations", "Governance", "Instructional design", "Learning program design", "Project management"]
     },
     {
       "@type": "Brand",
@@ -174,7 +198,8 @@
     .dark{background:#000;color:#fff}
     .leaders{padding:44px 0 44px}
     .leaders h2{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;border-top:2px solid #fff;padding:14px 0 0}
-    .people{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+    .leaders h2.sub{margin-top:48px}
+    .people{display:grid;grid-template-columns:repeat(2,1fr);gap:40px}
     .person{padding-top:26px}
     .person-head{display:flex;align-items:center;gap:16px;margin-bottom:16px}
     .mono{flex:none;width:52px;height:52px;border-radius:50%;background:#fff;color:#000;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600;letter-spacing:.02em}
@@ -241,16 +266,23 @@
         <h2>Team</h2>
         <div class="people">
           <div class="person">
-            <div class="person-head"><div class="mono" aria-hidden="true">NAO</div><div><h3>Nana A. Osei</h3><div class="title">Head of Privacy and Compliance</div></div></div>
-            <p>Nana leads privacy and compliance for Wenley Health and its three brands, from provider verification and user data to vendor risk, responsible AI and the policies behind each platform.</p>
+            <div class="person-head"><div class="mono" aria-hidden="true">NAO</div><div><h3>Nana A. Osei <span class="creds">CSPO</span></h3><div class="title">Head of Privacy and Compliance</div></div></div>
+            <p>Nana leads privacy and compliance for Wenley Health and its three brands. A Certified Scrum Product Owner with over 10 years of experience in governance, risk and compliance, she also guides how each platform is built, from provider verification and user data to responsible AI.</p>
           </div>
           <div class="person">
             <div class="person-head"><div class="mono" aria-hidden="true">KW</div><div><h3>Kaitlyn Williams</h3><div class="title">Provider Relationship Specialist</div></div></div>
             <p>Kaitlyn manages provider relationships across BeautyJar, WomensHealthPros and Backbeam, and is the first point of contact for providers who join.</p>
           </div>
+        </div>
+        <h2 class="sub" id="advisors">Advisors</h2>
+        <div class="people">
           <div class="person">
             <div class="person-head"><div class="mono" aria-hidden="true">MA</div><div><h3>Mambo Awasum-Henry <span class="creds">LMSW, LGSW, CSM</span></h3><div class="title">Brand Consultant</div></div></div>
-            <p>Mambo has advised Wenley Health on brand since 2025. She is a licensed mental health therapist and brings a clinician’s perspective to how our brands speak to patients and providers.</p>
+            <p>Mambo advises Wenley Health on brand. She is a licensed mental health therapist and brings a clinician’s perspective to how our brands speak to patients and providers.</p>
+          </div>
+          <div class="person">
+            <div class="person-head"><div class="mono" aria-hidden="true">NL</div><div><h3>Yathniella “Nelly” Lubin <span class="creds">MBA, MS</span></h3><div class="title">Operations and Learning Advisor</div></div></div>
+            <p>Nelly advises Wenley Health on operations, governance and learning design across its brands. A certified instructional designer, she brings 13+ years of experience leading projects, learning programs and cross-functional teams in regulated environments, and facilitates for the American Management Association.</p>
           </div>
         </div>
       </div>
